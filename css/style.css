@@ -4,7 +4,7 @@ html {
 
 body {
   font-family: "Overpass", sans-serif;
-  background-color: hsl(216, 12%, 8%);
+  background-color: black;
   color: hsl(216, 12%, 54%);
   font-size: 15px;
   position: relative;
@@ -16,6 +16,7 @@ body {
 }
 
 #card {
+  filter: brightness(110%);
   background-color: hsl(213, 19%, 18%);
   width: 400px;
   height: 375px;

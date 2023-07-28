@@ -13,7 +13,7 @@ html{
 
 body {
   font-family: $font;
-  background-color: $veryDarkBlue;
+  background-color: black;
   color: $mediumGrey;
   font-size: $paragraphFont;
   position: relative;
@@ -26,7 +26,7 @@ body {
 
 
 #card {
-  
+  filter: brightness(110%);
   background-color: $darkBlue;
   width: 400px;
   height: 375px;
