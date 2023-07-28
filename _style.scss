@@ -7,7 +7,7 @@ $circleColor: #1f303e;
 $paragraphFont: 15px;
 $font: "Overpass", sans-serif;
 
-html{
+html {
   overflow-x: hidden;
 }
 
@@ -23,7 +23,6 @@ body {
   padding: 0;
   overflow: hidden;
 }
-
 
 #card {
   filter: brightness(110%);
@@ -100,48 +99,45 @@ body {
         color: white;
       }
 
-      button:hover{
+      button:hover {
         color: $primaryColor;
         background: white;
         cursor: pointer;
+      }
     }
-    }
-
-    
   }
 
-  .thankYou{
+  .thankYou {
     padding: 25px;
     display: flex;
-    
+
     align-items: center;
     flex-direction: column;
-    
-    .thankYouImage{
+
+    .thankYouImage {
       display: flex;
       justify-content: center;
       margin-top: 20px;
-      
     }
-    .thankYouSelected{
+    .thankYouSelected {
       width: 200px;
       height: 30px;
       background-color: $circleColor;
       margin-top: 20px;
-      border-radius:20px;
+      border-radius: 20px;
       color: $primaryColor;
       display: flex;
       justify-content: center;
       align-items: center;
     }
-    h2{
+    h2 {
       color: white;
       font-weight: 700;
     }
-    p{
+    p {
       text-align: center;
     }
-    .thankText{
+    .thankText {
       width: 99%;
     }
     .hide {
@@ -151,15 +147,12 @@ body {
   .hide {
     display: none;
   }
-  
 }
 
-@media (max-width: 375px){
-  #card{
-    width:90vw;
+@media (max-width: 375px) {
+  #card {
+    width: 90vw;
     height: 400px;
     max-width: 100%;
   }
 }
-
-
