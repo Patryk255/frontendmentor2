@@ -1,0 +1,165 @@
+$primaryColor: hsl(25, 97%, 53%);
+$lightGrey: hsl(217, 12%, 63%);
+$mediumGrey: hsl(216, 12%, 54%);
+$darkBlue: hsl(213, 19%, 18%);
+$veryDarkBlue: hsl(216, 12%, 8%);
+$circleColor: #1f303e;
+$paragraphFont: 15px;
+$font: "Overpass", sans-serif;
+
+html{
+  overflow-x: hidden;
+}
+
+body {
+  font-family: $font;
+  background-color: $veryDarkBlue;
+  color: $mediumGrey;
+  font-size: $paragraphFont;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+
+#card {
+  
+  background-color: $darkBlue;
+  width: 400px;
+  height: 375px;
+  max-width: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  .inCardContent {
+    padding: 25px;
+
+    .starBackground {
+      background-color: $circleColor;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      text-align: center;
+      position: relative;
+
+      .starIcon {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    h2 {
+      color: white;
+      font-weight: 400;
+    }
+    .numbers {
+      width: 100%;
+      margin-top: 30px;
+      display: flex;
+      .number {
+        width: 50px;
+        height: 50px;
+        background-color: $circleColor;
+        border-radius: 50%;
+        text-align: center;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .active {
+        background-color: $primaryColor;
+        color: white;
+      }
+      .number:hover {
+        background-color: $lightGrey;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    .submitButton {
+      clear: both;
+      margin-top: 30px;
+      display: flex;
+      button {
+        width: 90%;
+        height: 40px;
+        margin: 0 auto;
+        background-color: $primaryColor;
+        letter-spacing: 3px;
+        font-weight: 400;
+        border: none;
+        border-radius: 30px;
+        color: white;
+      }
+
+      button:hover{
+        color: $primaryColor;
+        background: white;
+        cursor: pointer;
+    }
+    }
+
+    
+  }
+
+  .thankYou{
+    padding: 25px;
+    display: flex;
+    
+    align-items: center;
+    flex-direction: column;
+    
+    .thankYouImage{
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+      
+    }
+    .thankYouSelected{
+      width: 200px;
+      height: 30px;
+      background-color: $circleColor;
+      margin-top: 20px;
+      border-radius:20px;
+      color: $primaryColor;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    h2{
+      color: white;
+      font-weight: 700;
+    }
+    p{
+      text-align: center;
+    }
+    .thankText{
+      width: 99%;
+    }
+    .hide {
+      display: none;
+    }
+  }
+  .hide {
+    display: none;
+  }
+  
+}
+
+@media (max-width: 375px){
+  #card{
+    width:90vw;
+    height: 400px;
+    max-width: 100%;
+  }
+}
+
+
