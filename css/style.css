@@ -19,7 +19,7 @@ body {
   filter: brightness(110%);
   background-color: hsl(213, 19%, 18%);
   width: 400px;
-  height: 375px;
+  height: 390px;
   max-width: 100%;
   border-radius: 30px;
   position: absolute;
@@ -46,7 +46,10 @@ body {
 }
 #card .inCardContent h2 {
   color: white;
-  font-weight: 400;
+  font-weight: 700;
+}
+#card .inCardContent p {
+  line-height: 1.5;
 }
 #card .inCardContent .numbers {
   width: 100%;

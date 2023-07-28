@@ -28,7 +28,7 @@ body {
   filter: brightness(110%);
   background-color: $darkBlue;
   width: 400px;
-  height: 375px;
+  height: 390px;
   max-width: 100%;
   border-radius: 30px;
   position: absolute;
@@ -56,7 +56,10 @@ body {
     }
     h2 {
       color: white;
-      font-weight: 400;
+      font-weight: 700;
+    }
+    p{
+      line-height: 1.5;
     }
     .numbers {
       width: 100%;
