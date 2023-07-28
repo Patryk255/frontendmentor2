@@ -6,7 +6,7 @@ const selectedText = document.querySelector('.thankYouSelected');
 const inCardContent = document.querySelector('.inCardContent');
 const thankYou = document.querySelector('.thankYou');
 
-let selectedNumber = undefined;
+let selectedNumber = null;
 
 for (let i = 0; i < numbers.length; i++) {
   const self = numbers[i];
@@ -21,9 +21,11 @@ for (let i = 0; i < numbers.length; i++) {
   });
 }
 
+
 submitButton.addEventListener('click', function () {
-    console.log(selectedNumber);
+    if (selectedNumber){
     inCardContent.classList.add('hide');
     thankYou.classList.remove('hide');
     selectedText.innerHTML = `You selected ${selectedNumber} out of 5`
+    }
 })
