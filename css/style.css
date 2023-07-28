@@ -125,6 +125,7 @@ body {
 }
 #card .thankYou p {
   text-align: center;
+  line-height: 1.5;
 }
 #card .thankYou .thankText {
   width: 99%;
